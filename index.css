@@ -161,3 +161,23 @@ h3 {
 .coming-soon:hover {
     background-color: var(--accent-color-red);
 }
+
+/* TOOLS CSS */
+
+#tools-icons-1 {
+    font-size: 3rem;
+}
+#tools-icons-1 > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10%;
+    background-color: var(--accent-color-yellow);
+}
+#tools-icons-1 i {
+    color: var(--sub-color1);
+}
