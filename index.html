@@ -80,23 +80,23 @@
       <div class="row justify-content-center" id="projects-container">
 
         <div class="col-12 col-lg-4">
-          <div class="project-tile">
+          <div class="project-tile m-2 m-lg-4">
             <h4 class="py-2">Fujiwara Tofu Shop</h4>
-            <a href="https://jcle22.github.io/html-css-product-landing-page/" class="project-preview" target="_blank"><img src="./images/project-landing-page-sc.jpg" alt="fujiwara tofu landing page sc" class="img-fluid"></a>
+            <a href="https://jcle22.github.io/html-css-product-landing-page/" class="project-preview" target="_blank"><img src="./images/project-landing-page-sc.jpg" alt="fujiwara tofu landing page sc" class="img-fluid rounded"></a>
             <figcaption>freeCodeCamp Certification Project <br> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i></figcaption>
           </div>
         </div>
 
         <div class="col-12 col-lg-4">
-          <div class="project-tile">
+          <div class="project-tile m-2 m-lg-4">
             <h4 class="py-2">Divergence Meter</h4>
-            <a href="https://jcle22.github.io/html-css-javascript-divergence-meter/" class="project-preview" target="_blank"><img src="./images/divergence-meter.jpg" alt="divergence meter" class="img-fluid"></a>
+            <a href="https://jcle22.github.io/html-css-javascript-divergence-meter/" class="project-preview" target="_blank"><img src="./images/divergence-meter.jpg" alt="divergence meter" class="img-fluid rounded"></a>
             <figcaption>Divergence Meter Project <br> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-sass"></i> <i class="fa-brands fa-square-js"></i></figcaption>
           </div>
         </div>
 
         <div class="col-12 col-lg-4">
-          <div class="coming-soon">
+          <div class="coming-soon m-2 m-lg-4">
             <h4 class="py-2">soon...</h4>
           </div>
         </div>
@@ -110,7 +110,7 @@
       <h3 class="my-3 text-center">Tools</h3>
 
       <div id="tools-icons">
-        <div id="tools-icons-1" class="d-flex justify-content-center gap-5">
+        <div id="tools-icons-1" class="d-flex justify-content-center gap-2 gap-lg-4">
           <div><i class="fa-brands fa-html5"></i></div>
           <div><i class="fa-brands fa-css3-alt"></i></div>
           <div><i class="fa-brands fa-square-js"></i></div>
@@ -126,8 +126,21 @@
     <!-- contact page START -->
     <section id="contact">
       <h3 class="my-3 text-center">send a message</h3>
+      <form action="#">
 
-      
+        <fieldset>
+          <label for="full-name">Full Name: <input type="text" name="full-name" id="full-name" autocomplete placeholder=" e.g. John Smith"> </label>
+          <label for="email">Email Address: <input type="email" name="email" id="email" autocomplete placeholder=" e.g. john.smith@yoohoo.com" required></label>
+          <label for="number">Contact Number: <input type="number" name="contact-number" id="contact-number" autocomplete placeholder=" e.g. 09xxxxxxxxx"></label>
+        </fieldset>
+
+        <label for="message">Message
+          <textarea name="message" id="message" cols="30" rows="3" placeholder="I would like to work with you..."></textarea>
+        </label>
+
+        <input type="submit" value="Submit">
+      </form>
+
     </section>
     <!-- contact page END -->
 
