@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color Palette base on Nu Gundam */
+    --main-color: #d3d8db;
+    --sub-color1: #34344c;
+    --sub-color2: #565773;
+    --accent-color-red: #dc3b4b;
+    --accent-color-yellow: #fab142;
+    --accent-color-green: #00ad99;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: var(--main-color);
+}
+
+/* NAVBAR CSS */
+
+#navbar-section {
+    position: sticky;
+    top: 0;
+    padding: 0;
+    background-color: var(--main-color);
+}
+
+#icon-logo {
+    font-family: 'Water Brush', cursive;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: var(--accent-color-red);
+}
+
+.nav-font {
+    font-family: 'Chakra Petch', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.nav-font > li > a:hover {
+    color: var(--accent-color-red);
+}
+
+/* LANDING CSS */
+
+#landing-page {
+    background: linear-gradient(
+        180deg,
+        var(--sub-color1),
+        var(--sub-color2)
+    );
+}
+
+/* 1st div */
+#self-img > img {
+    width: 300px;
+    height: auto;
+}
+
+#socials-icons {
+    font-size: 32px;
+}
+
+#socials-icons > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--accent-color-yellow);
+    border-radius: 15%;
+    transition: transform 250ms ease-out;
+}
+#socials-icons > div:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+#socials-icons a {
+    color: var(--sub-color1);
+}
+
+/* 2nd div */
+
+#introduction {
+    color: var(--main-color);
+}
+#introduction h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+#introduction #full-stack-word {
+    font-size: 7rem;
+    text-shadow: 5px 5px var(--accent-color-red)
+}
+#introduction #web-developer-word {
+    font-size: 5rem;
+    text-shadow: 5px 5px var(--accent-color-red)
+}
+
+@media (max-width: 576px) {
+    #introduction {
+        text-align: center;
+    }
+    
+    #introduction h1 {
+        font-size: 2rem;
+    }
+
+    #introduction #full-stack-word {
+        font-size: 5rem;
+    }
+
+    #introduction #web-developer-word {
+        font-size: 3rem;
+    }
+}
+
+/* PROJECTS CSS */
+
+h3 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#projects-container {
+    background-color: var(--sub-color2);
+}
+
+.project-tile {
+    transition: all 300ms ease-in;
+}
+.project-tile:hover {
+    transform: scale(1.2);
+    background-color: var(--accent-color-yellow);
+}
+.project-tile > h4, .project-tile > figcaption {
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
+    color: var(--main-color);
+}
+.project-tile > h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.coming-soon {
+    background-color: var(--sub-color2);
+    font-size: 1.2rem;
+    font-family: 'Chakra Petch', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-color);
+}
+.coming-soon:hover {
+    background-color: var(--accent-color-red);
+}
